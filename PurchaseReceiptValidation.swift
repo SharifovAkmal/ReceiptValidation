@@ -17,7 +17,7 @@ extension PurchaseViewController {
                 let requestContents = [
                     "receipt-data": receiptData.base64EncodedString(options: .endLineWithCarriageReturn),
                     //Shared code from appstoreconnect.com
-                    "password": "003eee91a7854cdb9d179aeb41fbc800"
+                    "password": "sharedCode"
                 ]
                 
                 AF.request(url, method: .post, parameters: requestContents, encoding: JSONEncoding.default, headers: ["content-type": "application/json"])
